@@ -1,0 +1,91 @@
+.math {
+  width: 500px;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.math__imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.math__slider {
+  display: flex;
+  height: 100%;
+}
+
+.math__img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.math__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.math__imageWrapper:hover .math__overlay {
+  opacity: 1;
+}
+
+.math__overlayText {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.math__button {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.math__button:hover {
+  background-color: #034680; 
+  color: whitesmoke;
+}
+
+.math__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.math__title {
+  color: whitesmoke;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+
+.math__icon {
+  width: 24px;
+  height: 24px;
+}

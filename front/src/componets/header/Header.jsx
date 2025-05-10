@@ -9,19 +9,22 @@ const Header = () => {
                 <div className="header__row">
                     <div className="header__logo">
                         <img src={logo} alt="logo" />
-                        <span>EDUCATION</span>
+                        <span>LearnUp</span>
                     </div>
 
                     <div className="header__nav">
                         <ul>
-                            <li><button>Курсы</button></li>
-                            <li><button>Предметы</button></li>
-                            <li><button>Программы</button></li>
-                            <li><button>О нас</button></li>
                             
+                            <li><button>Языковые Курсы</button></li>
+                            <li><button>IT Курсы</button></li>
+                            <li><button>Оброзовательные Курсы</button></li>
+                            <li><button>О нас</button></li>
+                            <li><button>Контакты</button></li>
+                           
                     <div className="header__auth">
                         <button className="header__login-btn">Войти</button>
                     </div>
+
                         </ul>
                     </div>
                 </div>

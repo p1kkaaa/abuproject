@@ -30,7 +30,6 @@
   }  
   
     .header__logo span {
-    text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 24px;

@@ -8,7 +8,7 @@ const Parallax = () => {
         <div className="promo__text">
           <div className="mutetit">
             <p>
-                Открой для себя мир знаний — обучайся, расти, достигай!
+                LearnUp — туда, где знания становятся твоими.
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ const Tutor = () => {
   return (
     <section className="tutor-search">
       <h1 className="tutor-title">
-        Репетиторы по английскому языку онлайн: прокачайте язык с опытным учителем
+        Репетиторы онлайн: прокачайте скилы с опытным учителем
       </h1>
       <div className="filters-grid">
         <select>

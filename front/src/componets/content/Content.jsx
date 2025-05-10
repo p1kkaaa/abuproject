@@ -3,7 +3,7 @@ import './content.css'
 
 const Content = () => {
     return (
-        <section className="content">
+        <section id='content' className="content">
             <div className="content__header">
                 <h1 className="content-title">
                     Прокачай свои скилы на максимум с опытным преподавателем

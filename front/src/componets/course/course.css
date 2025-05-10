@@ -1,0 +1,24 @@
+.course {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.course__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.course__card {
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    column-gap: 40px;
+}
+
+.course__header h2 {
+  font-size: 2rem;
+}
