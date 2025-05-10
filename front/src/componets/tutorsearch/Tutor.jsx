@@ -1,4 +1,4 @@
-import './tutor.css';
+import './tutor.css'
 
 const Tutor = () => {
   return (
@@ -6,79 +6,93 @@ const Tutor = () => {
       <h1 className="tutor-title">
         Репетиторы по английскому языку онлайн: прокачайте язык с опытным учителем
       </h1>
-
       <div className="filters-grid">
         <select>
+          <option>Хочу изучить</option>
           <option>Английский</option>
           <option>Немецкий</option>
           <option>Французский</option>
-          <option>Китайский</option>
+          <option>Испанский</option>
+          <option>Программирование</option>
+          <option>Математика</option>
+          <option>Анология</option>
         </select>
 
-        <div className="price-range">
-          <label>Цена за урок: 3 $ - 40 $</label>
-          <input type="range" min="3" max="40" />
-        </div>
+        <select>
+          <option>Любая цена</option>
+          <option>3 $ - 40+ $</option>
+          <option>3 $ - 10 $</option>
+          <option>10 $ - 20 $</option>
+          <option>20 $ - 40 $</option>
+          <option>40 $+</option>
+        </select>
 
         <select>
           <option>Любая страна</option>
-          <option>Кыргызстан</option>
           <option>Россия</option>
+          <option>Кыргызстан</option>
           <option>США</option>
+          <option>Филиппины</option>
           <option>Великобритания</option>
         </select>
 
         <select>
           <option>Любое время</option>
-          <option>Утро (9:00 - 10:00)</option>
-          <option>День (14:00 - 15:00)</option>
-          <option>Ночь (22:00 - 23:00)</option>
+          <option>Утро</option>
+          <option>День</option>
+          <option>Вечер</option>
+          <option>Ночь</option>
         </select>
 
         <select>
           <option>Специальность</option>
           <option>Разговорный английский</option>
-          <option>Британский английский</option>
-          <option>Английский для начинающих</option>
+          <option>Подготовка к экзаменам</option>
+          <option>Бизнес английский</option>
         </select>
 
         <select>
           <option>Говорит на</option>
           <option>Русский</option>
+          <option>Кыргызский</option>
           <option>Английский</option>
-          <option>Французский</option>
+
         </select>
 
-        <div className="toggle-block">
-          <label>
-            <input type="checkbox" />
-            Показывать только носителей языка
-          </label>
-        </div>
+        <select>
+          <option>Носитель языка</option>
+          <option>Да</option>
+          <option>Нет</option>
+        </select>
 
-        <div className="toggle-block">
-          <label>
-            <input type="checkbox" />
-            Супер репетиторы — мы будем показывать репетиторов с высоким рейтингом
-          </label>
-          <label>
-            <input type="checkbox" />
-            Профессиональные репетиторы — мы будем показывать высококвалифицированных репетиторов с подтверждением сертификата
-          </label>
-        </div>
+        <select>
+          <option>Категории преподавателей</option>
+          <option>Профессиональные преподаватели</option>
+          <option>Частные учителя</option>
+        </select>
 
         <select>
           <option>Сортировать по: Нашим рекомендациям</option>
-          <option>Популярности</option>
-          <option>Количеству отзывов</option>
-          <option>Высокому рейтингу</option>
+          <option>По рейтингу</option>
+          <option>По цене (сначала дешевые)</option>
+          <option>По цене (сначала дорогие)</option>
+          <option>По отзывам</option>
         </select>
 
-        <input type="text" placeholder="Искать имя или слово" />
+        <select>
+          <option>Опыт преподавания</option>
+          <option>1–3 года</option>
+          <option>3–5 лет</option>
+          <option>5+ лет</option>
+        </select>
+
+        <input type="text" placeholder="Искать по имени или ключевому слову: John, IELTS, USA..." />
+
       </div>
+
     </section>
   );
-};
+}
 
 export default Tutor;
 

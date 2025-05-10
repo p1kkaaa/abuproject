@@ -1,0 +1,40 @@
+.content {
+    margin-top: 150px;
+    padding: 24px;
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.content-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content__header h1 {
+    font-size: 2rem;
+}
+
+.content__txt {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.content__txt h1 {
+    font-size: 1.5rem;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column; /* карточки по вертикали */
+    gap: 50px;              /* отступ между карточками */
+    padding: 0 24px;
+    margin-left: 80px;
+}
+
