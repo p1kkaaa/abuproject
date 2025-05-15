@@ -1,16 +1,22 @@
-import About from "./componets/about/About";
-import Content from "./componets/content/Content";
-import Course from "./componets/course/Course";
-import Footer from "./componets/footer/Footer";
-import Header from "./componets/header/Header";
-import Item from "./componets/item/Item";
-import Lang from "./componets/lang/Lang";
-import Parallax from "./componets/parallax/Parallax";
-import Requisite from "./componets/requisite/Requisite";
-import Tutor from "./componets/tutorsearch/Tutor";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const App = () => {
-  return ( 
+import About from './components/about/About'
+import Content from "./components/content/Content";
+import Course from "./components/course/Course";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Item from "./components/item/Item";
+import Lang from "./components/lang/Lang";
+import Parallax from "./components/parallax/Parallax";
+import Requisite from "./components/requisite/Requisite";
+import Tutor from "./components/tutorsearch/Tutor";
+import Backpage from "./components/page/itpage/backpage";
+import Frontpage from "./components/page/itpage/frontpage";
+import Uiuxpage from "./components/page/itpage/uiuxpage";
+import LoginRegistr from "./components/page/login-registr/Loginregistr";
+
+function MainPage() {
+  return (
     <>
       <Header />
       <Parallax />
@@ -22,9 +28,25 @@ const App = () => {
       <About />
       <Requisite />
       <Footer />
-
     </>
-   );
+  );
 }
- 
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/backpage" element={<Backpage />} />
+          <Route path="/uiuxpage" element={<Uiuxpage />} />
+          <Route path="/frontpage" element={<Frontpage />} />
+          <Route path="/loginregistr" element={<LoginRegistr />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
 export default App;
