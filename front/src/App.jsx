@@ -14,6 +14,9 @@ import Backpage from "./components/page/itpage/backpage";
 import Frontpage from "./components/page/itpage/frontpage";
 import Uiuxpage from "./components/page/itpage/uiuxpage";
 import LoginRegistr from "./components/page/login-registr/Loginregistr";
+import Engpage from "./components/page/langpage/Engpage";
+import Gerpage from "./components/page/langpage/Gerpage";
+import Korpage from "./components/page/langpage/Korpage";
 
 function MainPage() {
   return (
@@ -42,6 +45,9 @@ function App() {
           <Route path="/backpage" element={<Backpage />} />
           <Route path="/uiuxpage" element={<Uiuxpage />} />
           <Route path="/frontpage" element={<Frontpage />} />
+          <Route path="/engpage" element={<Engpage />} />
+          <Route path="/gerpage" element={<Gerpage />} />
+          <Route path="/korpage" element={<Korpage />} />
           <Route path="/loginregistr" element={<LoginRegistr />} />
         </Routes>
       </Router>

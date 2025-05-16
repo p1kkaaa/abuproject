@@ -1,13 +1,15 @@
 import styles from './Langcard.module.css'
 import content from './../../img/photo/UK.jpg'
 import arrowimg from './../../img/obj/arrow.svg'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const English = () => {
-const handleClick = () => {
-    alert("Нажали на Eng");
-  };
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate('/engpage')
+  }
 
   return (
     <div className={styles.lang}>
