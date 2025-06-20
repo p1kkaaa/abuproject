@@ -40,7 +40,7 @@ function MainPage() {
 function App() {
   return (
     <div className="App">
-        <AuthProvider>
+      <AuthProvider>
       <Router>
         <Header />
         <Routes>
