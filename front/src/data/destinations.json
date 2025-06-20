@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Back",
+    "description": "Backend",
+    "image": "/img/photo/back.jpg"
+  }, 
+    {
+    "id": 2,
+    "name": "Front",
+    "description": "Frontend",
+    "image": "/img/photo/front.jpg"
+  },
+   {
+    "id": 3,
+    "name": "UI/UX",
+    "description": "Ui/Ux",
+    "image": "/img/photo/uiux.jpg"
+  },
+  {
+
+  }
+]

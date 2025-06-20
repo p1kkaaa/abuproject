@@ -17,6 +17,8 @@ import LoginRegistr from "./components/page/login-registr/Loginregistr";
 import Engpage from "./components/page/langpage/Engpage";
 import Gerpage from "./components/page/langpage/Gerpage";
 import Korpage from "./components/page/langpage/Korpage";
+import { AuthProvider } from "./context/AuthContext";
+import Booking from "./components/booking/Booking";
 
 function MainPage() {
   return (
@@ -38,6 +40,7 @@ function MainPage() {
 function App() {
   return (
     <div className="App">
+        <AuthProvider>
       <Router>
         <Header />
         <Routes>
@@ -49,8 +52,10 @@ function App() {
           <Route path="/gerpage" element={<Gerpage />} />
           <Route path="/korpage" element={<Korpage />} />
           <Route path="/loginregistr" element={<LoginRegistr />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
       </Router>
+    </AuthProvider>
     </div>
   );
 }
